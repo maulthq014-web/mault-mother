@@ -27,11 +27,9 @@ select,input{background:#0a0a0a;border:1px solid #222;padding:12px;border-radius
 </head>
 <body>
 <nav><div style="font-weight:900">MAULT PROPERTY_</div><div><a href="/" style="color:#666">← MOTHER</a> <span style="color:#222">|</span> <a href="mailto:tech@maultgroup.com" style="color:#666">tech@maultgroup.com</a></div></nav>
-
 <div class="hero">
 <h1>Western Cape<br><span>Property Marketplace</span></h1>
 <p style="color:#666;margin-top:15px;max-width:600px">Rentals & Sales across WC. Landlords list FREE. Commission only when deal closes. Contact: tech@maultgroup.com</p>
-
 <div class="filters">
 <div><select id="fType" onchange="filter()"><option value="all">All - Rent & Sale</option><option value="rent">For Rent</option><option value="sale">For Sale</option></select></div>
 <div><select id="fArea" onchange="filter()"><option value="all">All WC</option><option value="CBD">CBD</option><option value="Bellville">Bellville</option><option value="Stellenbosch">Stellenbosch</option><option value="Paarl">Paarl</option><option value="Khayelitsha">Khayelitsha</option></select></div>
@@ -39,7 +37,6 @@ select,input{background:#0a0a0a;border:1px solid #222;padding:12px;border-radius
 <div><select id="fBed" onchange="filter()"><option value="0">Any Beds</option><option value="1">1+ Bed</option><option value="2">2+ Beds</option></select></div>
 </div>
 </div>
-
 <div class="grid" id="grid">
 <div class="card" data-type="rent" data-area="CBD" data-price="8500" data-bed="2">
 <div class="card-img">🏢<div class="badge">FOR RENT</div><div class="price">R8,500 /mo</div></div>
@@ -47,14 +44,12 @@ select,input{background:#0a0a0a;border:1px solid #222;padding:12px;border-radius
 <button class="btn" onclick="enquire('2 Bed CBD R8500')">WhatsApp Enquiry</button>
 <button class="btn btn2" onclick="emailEnquire('2 Bed CBD R8500')">Email: tech@maultgroup.com</button>
 </div></div>
-
 <div class="card" data-type="sale" data-area="Bellville" data-price="1250000" data-bed="3">
 <div class="card-img">🏠<div class="badge" style="background:#0f0">FOR SALE</div><div class="price">R1,250,000</div></div>
 <div class="card-body"><h3>3 Bed - Bellville</h3><div style="color:#666;font-size:13px;margin-top:8px">📍 Bellville South • 3 Bed • Yard</div>
 <button class="btn" onclick="enquire('3 Bed Bellville R1.25m')">WhatsApp Enquiry</button>
 <button class="btn btn2" onclick="emailEnquire('3 Bed Bellville R1.25m')">Email: tech@maultgroup.com</button>
 </div></div>
-
 <div class="card" data-type="rent" data-area="Stellenbosch" data-price="12000" data-bed="3">
 <div class="card-img">🌳<div class="badge">FOR RENT</div><div class="price">R12,000 /mo</div></div>
 <div class="card-body"><h3>3 Bed - Stellenbosch</h3><div style="color:#666;font-size:13px;margin-top:8px">📍 University Area • Students Welcome</div>
@@ -62,16 +57,13 @@ select,input{background:#0a0a0a;border:1px solid #222;padding:12px;border-radius
 <button class="btn btn2" onclick="emailEnquire('3 Bed Stellenbosch R12k')">Email: tech@maultgroup.com</button>
 </div></div>
 </div>
-
 <div class="owner-box">
-<div><h2>Landlord / Agent?</h2><p style="color:#666;margin-top:10px">List FREE. Pay only when closed. 50% first month (rent) or 2% (sale).</p><p style="margin-top:20px">📧 <a href="mailto:tech@maultgroup.com?subject=List My Property WC" style="color:white;text-decoration:underline">tech@maultgroup.com</a><br>📱 WhatsApp: 070 000 0000</p></div>
+<div><h2>Landlord / Agent?</h2><p style="color:#666;margin-top:10px">List FREE. Pay only when closed. 50% first month (rent) or 2% (sale).</p><p style="margin-top:20px">📧 <a href="mailto:tech@maultgroup.com?subject=List My Property WC" style="color:white;text-decoration:underline">tech@maultgroup.com</a><br>📱 WhatsApp: 073 638 8901</p></div>
 <div><input id="lName" placeholder="Your Name"><br><br><input id="lPrice" placeholder="e.g. Rent R8000 or Sale R1.2m"><br><br><input id="lDetails" placeholder="Details: 2 bed, etc"><br><br>
 <button class="btn" style="width:100%" onclick="listProp()">List via WhatsApp</button>
 <button class="btn btn2" style="width:100%;margin-top:10px" onclick="listEmail()">List via Email</button>
 </div></div>
-
 <p style="text-align:center;color:#333;padding:40px">© 2026 Mault Property • tech@maultgroup.com • Division of Mault Group</p>
-
 <script>
 function filter(){
 let t=fType.value,a=fArea.value,p=fPrice.value||0,b=fBed.value;
@@ -85,19 +77,19 @@ c.style.display=show?'block':'none';
 });
 }
 function enquire(prop){
-window.open('https://wa.me/27700000000?text='+encodeURIComponent('Hi Mault Property! Interested in '+prop),'_blank');
+window.open('https://wa.me/27736388901?text='+encodeURIComponent('Hi Mault Property! Interested in '+prop),'_blank');
 }
 function emailEnquire(prop){
-window.location.href='mailto:tech@maultgroup.com?subject=Enquiry: '+encodeURIComponent(prop)+'&body=Hi Mault Team, I am interested in '+encodeURIComponent(prop)+'. Please contact me.';
+window.location.href='mailto:maulthq014@gmail.com?subject=Enquiry: '+encodeURIComponent(prop)+'&body=Hi Mault Team, I am interested in '+encodeURIComponent(prop)+'. Please contact me.';
 }
 function listProp(){
 let msg=`Hi Mault Property! List my property. Name: ${lName.value}, Price: ${lPrice.value}, Details: ${lDetails.value}`;
-window.open('https://wa.me/27+736388901?text='+encodeURIComponent(msg),'_blank');
+window.open('https://wa.me/27736388901?text='+encodeURIComponent(msg),'_blank');
 }
 function listEmail(){
 let sub=`List My Property: ${lPrice.value}`;
 let body=`Name: ${lName.value}%0D%0APrice: ${lPrice.value}%0D%0ADetails: ${lDetails.value}`;
-window.location.href=`mailto:maulthq014@gmail.com?subject=${encodeURIComponent(sub)}&body=${body}`;
+window.location.href=`mailto:maulthq014@gmil.com?subject=${encodeURIComponent(sub)}&body=${body}`;
 }
 </script>
 </body>
