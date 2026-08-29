@@ -2,191 +2,96 @@
 <html>
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mault Academy - Register, Free Notes 1 Month, NSFAS R99</title>
+<title>Mault Academy - Email Only</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial}
-body{background:#080808;color:white}
-a{text-decoration:none;color:inherit}
-nav{max-width:1300px;margin:0 auto;padding:20px;display:flex;justify-content:space-between;border-bottom:1px solid #1a1a1a;position:sticky;top:0;background:#080808;z-index:99}
-.badge{background:#a78bfa;color:black;padding:8px 16px;border-radius:100px;font-weight:900;font-size:12px;display:inline-block}
-.btn{background:white;color:black;padding:16px 28px;border-radius:100px;font-weight:900;cursor:pointer;border:none;display:inline-block;text-align:center}
-.btn2{background:transparent;border:1px solid #333;color:white}
-.hero{max-width:1100px;margin:40px auto;padding:0 20px;text-align:center}
-.hero h1{font-size:56px;line-height:0.9}
-.hero span{color:#a78bfa}
-.tabs{max-width:1100px;margin:30px auto;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:0 20px}
-.tab{padding:12px 22px;border-radius:100px;border:1px solid #222;background:#111;color:#888;cursor:pointer;font-weight:700;font-size:13px}
-.tab.active{background:white;color:black;border-color:white}
-.section{display:none;max-width:1100px;margin:0 auto;padding:0 20px 40px}
-.section.active{display:block}
-.form-box{max-width:700px;margin:20px auto;padding:30px;background:#111;border:1px solid #222;border-radius:24px}
-input,select,textarea{background:#0a0a0a;border:1px solid #222;padding:14px;border-radius:12px;color:white;width:100%;margin-top:8px}
-label{color:#888;font-size:12px;margin-top:14px;display:block}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:15px}
-.card{background:#111;border:1px solid #1e1e1e;border-radius:20px;padding:22px}
-@media(max-width:900px){.hero h1{font-size:36px}}
+body{background:#0a0a0a;color:#e5e5e5}
+nav{max-width:1100px;margin:0 auto;padding:20px;display:flex;justify-content:space-between;border-bottom:1px solid #222}
+.btn{background:#e5e5e5;color:#0a0a0a;padding:16px;border-radius:100px;font-weight:800;border:none;width:100%;cursor:pointer;font-size:15px}
+.form-box{max-width:580px;margin:30px auto;background:#121212;border:1px solid #222;border-radius:20px;padding:26px}
+input,select{background:#0a0a0a;border:1px solid #222;padding:14px;border-radius:12px;color:white;width:100%;margin-top:8px;font-size:15px}
+label{color:#777;font-size:12px;margin-top:14px;display:block}
+.card{background:#121212;border:1px solid #222;border-radius:16px;padding:20px}
 </style>
 </head>
 <body>
-<nav><div style="font-weight:900">MAULT ACADEMY_</div><div><a href="/" style="color:#666">← MOTHER</a> <span style="color:#333"> | </span> <a href="mailto:maulthq014@gmail.com" style="color:#666">maulthq014@gmail.com</a></div></nav>
+<nav><div style="font-weight:900">MAULT ACADEMY_</div><div><a href="/" style="color:#666">← GROUP</a> <span style="color:#444">|</span> <span style="color:#aaa;font-size:13px">maulthq014@gmail.com</span></div></nav>
 
-<div class="hero">
-<div class="badge">REGISTER FIRST • GET ADMITTED FAST • FREE NOTES 1 MONTH</div>
-<h1>Register Once.<br><span>Get Admitted Fast</span><br>to WC Academies</h1>
-<p style="color:#888;margin:18px auto;max-width:680px;font-size:16px;line-height:1.5">Create account, we save your details, apply to academies for you, give free notes/papers for 1 month, NSFAS help R99.</p>
-</div>
-
-<div class="tabs">
-<button class="tab active" onclick="showTab('register')">1. REGISTER *</button>
-<button class="tab" onclick="showTab('notes')">2. FREE NOTES</button>
-<button class="tab" onclick="showTab('nsfas')">3. NSFAS R99</button>
-<button class="tab" onclick="showTab('how')">HOW IT WORKS</button>
+<div style="max-width:1100px;margin:40px auto;padding:0 20px;text-align:center">
+<div style="background:#222;border:1px solid #333;padding:7px 14px;border-radius:100px;font-size:11px;font-weight:700;display:inline-block;color:#a78bfa">EMAIL ONLY • NO WHATSAPP • REGISTER FIRST</div>
+<h1 style="font-size:44px;margin-top:14px;line-height:0.9">Register First,<br><span style="color:#666">Get Admitted Fast</span></h1>
+<p style="color:#777;margin-top:12px">Free application to 3 WC academies • Free notes 1 month • NSFAS help R99 • Email only</p>
+<div style="margin-top:18px;background:#121212;border:1px solid #222;border-radius:12px;padding:12px;display:inline-block"><p style="color:#666;font-size:11px">ALL REGISTRATIONS TO</p><p style="color:white;font-weight:800;font-size:16px">maulthq014@gmail.com</p></div>
 </div>
 
-<!-- REGISTER TAB -->
-<div id="register" class="section active">
-<div class="form-box">
-<h2 style="text-align:center">Create Account - Required</h2>
-<p style="color:#666;text-align:center;font-size:13px;margin-top:6px">We need your details to admit you fast - no repeat forms</p>
-<label>Full Name *</label><input id="rName" placeholder="Tshepang Sekao">
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-<div><label>ID Number *</label><input id="rID" placeholder="990101..."></div>
-<div><label>Age *</label><select id="rAge"><option>18-20</option><option>21-23</option><option>24-27</option><option>28+</option></select></div>
+<div class="form-box" id="regForm">
+<h2 style="text-align:center;color:white">Academy Registration</h2>
+<p style="color:#555;text-align:center;font-size:12px;margin-top:6px">Email: maulthq014@gmail.com • Reply in 24H</p>
+
+<label>Full Name *</label><input id="aName" placeholder="Thabo Mbeki">
+<label>Email * (we reply here)</label><input id="aEmail" type="email" placeholder="your@email.com">
+<label>Phone (optional)</label><input id="aPhone" placeholder="071... (optional)">
+<label>Academy Interested *</label>
+<select id="aAcademy">
+<option>Boland College</option>
+<option>College of Cape Town</option>
+<option>False Bay College</option>
+<option>Northlink College</option>
+<option>West Coast College</option>
+<option>South Cape College</option>
+<option>Other WC Academy</option>
+</select>
+<label>Course Interested *</label><input id="aCourse" placeholder="e.g. IT, Business Management">
+<label>Highest Grade *</label><select id="aGrade"><option>Grade 12</option><option>Grade 11</option><option>Grade 10</option><option>Matric Completed</option></select>
+
+<button class="btn" style="margin-top:22px" onclick="sendEmail()">REGISTER NOW → SEND TO maulthq014@gmail.com</button>
+
+<div id="after" style="display:none;margin-top:18px">
+<div style="background:#1a2e1a;border:1px solid #2a4a2a;border-radius:12px;padding:16px;text-align:center">
+<p style="color:#6f6;font-weight:800">✅ Email Opening...</p>
+<p style="color:#aaa;font-size:12px;margin-top:6px">If email app doesn't open, COPY below and paste to maulthq014@gmail.com</p>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-<div><label>Phone *</label><input id="rPhone" placeholder="0712345678"></div>
-<div><label>Email * (notes sent here)</label><input id="rEmail" placeholder="your@email.com"></div>
+<div style="background:#0a0a0a;border:1px solid #222;border-radius:12px;padding:14px;margin-top:12px">
+<p style="color:#555;font-size:10px">COPY THIS → PASTE TO EMAIL:</p>
+<p id="copyBox" style="color:#aaa;font-size:12px;margin-top:8px;white-space:pre-wrap;line-height:1.6"></p>
+<button class="btn" style="margin-top:12px;background:#222;color:#aaa;border:1px solid #333" onclick="copyText()">COPY DETAILS</button>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-<div><label>Area *</label><select id="rArea"><option>Bellville</option><option>CBD</option><option>Khayelitsha</option><option>Stellenbosch</option><option>Paarl</option><option>Online</option></select></div>
-<div><label>Highest Grade *</label><select id="rEdu"><option>Grade 11</option><option>Grade 12 / Matric</option><option>N1-N3</option><option>N4-N6</option><option>Diploma</option></select></div>
-</div>
-<label>What to study? *</label><select id="rCourse"><option>Business Management N4-N6</option><option>IT / Programming</option><option>Engineering N1-N6</option><option>Educare</option><option>HR Management</option><option>Financial Management</option><option>Matric Rewrite</option><option>Other</option></select>
-<label>Services needed:</label>
-<div style="margin-top:8px;background:#080808;border:1px solid #222;border-radius:12px;padding:15px">
-<label style="display:flex;gap:8px;color:white;margin-top:0"><input type="checkbox" id="sApply" checked style="width:auto"> Free Application to Academies (FREE)</label>
-<label style="display:flex;gap:8px;color:white;margin-top:10px"><input type="checkbox" id="sNotes" checked style="width:auto"> Free Notes & Past Papers 1 Month (FREE)</label>
-<label style="display:flex;gap:8px;color:white;margin-top:10px"><input type="checkbox" id="sNSFAS" style="width:auto"> NSFAS Application Help (R99 once-off)</label>
-</div>
-<div id="nsfasBox" style="display:none;margin-top:12px;background:#1a152a;border:1px solid #a78bfa;border-radius:12px;padding:12px">
-<p style="color:#a78bfa;font-weight:900;font-size:12px">NSFAS R99 INCLUDES:</p><p style="color:#888;font-size:12px;margin-top:5px">Form filling, doc check, submission, follow-up. Pay after registration via EFT/Capitec. POP to maulthq014@gmail.com</p>
-</div>
-<label>Create Password *</label><input id="rPass" type="password" placeholder="Create password">
-<button class="btn" style="width:100%;margin-top:20px;padding:18px" onclick="registerStudent()">CREATE ACCOUNT & SEND TO EMAIL →</button>
-<p style="color:#444;text-align:center;margin-top:12px;font-size:11px">All data to maulthq014@gmail.com • Saved for fast admission • Private</p>
+<p style="text-align:center;margin-top:12px"><a href="mailto:maulthq014@gmail.com" style="color:#a78bfa;font-size:13px">Or click here to open email manually → maulthq014@gmail.com</a></p>
 </div>
 </div>
 
-<!-- NOTES TAB -->
-<div id="notes" class="section">
-<h2 style="text-align:center">Free Notes & Past Papers - 1 Month Free</h2>
-<p style="color:#666;text-align:center;margin-top:8px">Register first, then access. Free for 30 days. After that R99/month premium (optional)</p>
-<div class="grid" style="margin-top:25px">
-<div class="card"><h3>📚 Business Management</h3><p style="color:#666;font-size:13px;margin-top:8px">N4-N6 Past Papers, Notes, Memos</p><p style="color:#444;font-size:12px;margin-top:10px">N4: Intro Business, N5: Entrep, N6: Sales</p><button class="btn2 btn" style="width:100%;margin-top:12px" onclick="getNotes('Business Management')">GET FREE ACCESS →</button></div>
-<div class="card"><h3>💻 IT / Programming</h3><p style="color:#666;font-size:13px;margin-top:8px">Programming, Networking, Past Papers</p><p style="color:#444;font-size:12px;margin-top:10px">HTML, CSS, Past Papers N4-N6</p><button class="btn2 btn" style="width:100%;margin-top:12px" onclick="getNotes('IT Programming')">GET FREE ACCESS →</button></div>
-<div class="card"><h3>⚙️ Engineering N1-N6</h3><p style="color:#666;font-size:13px;margin-top:8px">All trades - Question Papers + Memos</p><p style="color:#444;font-size:12px;margin-top:10px">Electrical, Mechanical, Civil</p><button class="btn2 btn" style="width:100%;margin-top:12px" onclick="getNotes('Engineering')">GET FREE ACCESS →</button></div>
-<div class="card"><h3>👶 Educare / HR</h3><p style="color:#666;font-size:13px;margin-top:8px">Educare N4-N6, HR, Management</p><button class="btn2 btn" style="width:100%;margin-top:12px" onclick="getNotes('Educare HR')">GET FREE ACCESS →</button></div>
-<div class="card"><h3>📝 Matric Rewrite</h3><p style="color:#666;font-size:13px;margin-top:8px">Grade 10-12 Past Papers 2020-2024</p><p style="color:#444;font-size:12px;margin-top:10px">DBE, CAPS, Study Guides</p><button class="btn2 btn" style="width:100%;margin-top:12px" onclick="getNotes('Matric')">GET FREE ACCESS →</button></div>
-<div class="card" style="border-color:#a78bfa"><h3>📁 All Notes Drive Link</h3><p style="color:#666;font-size:13px;margin-top:8px">One drive with everything - Free 30 days</p><p style="color:#a78bfa;font-size:12px;margin-top:10px;font-weight:800">Drive link sent after registration</p><button class="btn" style="width:100%;margin-top:12px" onclick="showTab('register')">REGISTER TO ACCESS →</button></div>
-</div>
-<div style="max-width:700px;margin:30px auto;background:#111;border:1px solid #222;border-radius:16px;padding:20px;text-align:center">
-<p style="color:#888;font-size:13px">How free notes work:</p><p style="color:#444;font-size:12px;margin-top:8px;line-height:1.6">1. Register account (Tab 1)<br>2. We email you Drive link instantly<br>3. Free for 30 days<br>4. After 30 days, optional R99/month for premium<br>5. No card needed for first month</p>
-</div>
-</div>
-
-<!-- NSFAS TAB -->
-<div id="nsfas" class="section">
-<div style="max-width:800px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px">
-<div class="form-box" style="margin:0">
-<h2>NSFAS Help - R99</h2>
-<p style="color:#666;font-size:13px;margin-top:8px">We help you apply correctly - avoid rejection</p>
-<div style="margin-top:20px;background:#080808;border-radius:12px;padding:15px">
-<p style="font-size:13px;color:white">R99 once-off includes:</p>
-<p style="font-size:12px;color:#888;margin-top:10px;line-height:1.7">
-✓ Check if you qualify<br>
-✓ Fill NSFAS form correctly<br>
-✓ Document checklist (ID, results, proof)<br>
-✓ Upload & submission<br>
-✓ Follow-up until approved<br>
-✓ Re-application if rejected
-</p>
-</div>
-<div style="margin-top:15px;background:#1a152a;border:1px solid #a78bfa;border-radius:12px;padding:15px;text-align:center">
-<p style="color:#a78bfa;font-weight:900">R99 ONCE-OFF</p>
-<p style="font-size:12px;color:#888;margin-top:5px">Pay after registration</p>
-<p style="font-size:12px;color:#666;margin-top:8px">Capitec / EFT<br>Ref: NSFAS + Your Name<br>Send POP to maulthq014@gmail.com</p>
-</div>
-<button class="btn" style="width:100%;margin-top:15px" onclick="nsfasRequest()">REQUEST NSFAS HELP R99 →</button>
-</div>
-<div class="form-box" style="margin:0">
-<h3>NSFAS Requirements Checklist</h3>
-<p style="color:#666;font-size:12px;margin-top:10px">We check these for you:</p>
-<div style="margin-top:15px">
-<label style="color:white"><input type="checkbox" style="width:auto"> South African ID</label>
-<label style="color:white"><input type="checkbox" style="width:auto"> Matric results / Latest results</label>
-<label style="color:white"><input type="checkbox" style="width:auto"> Proof of income (parent/guardian)</label>
-<label style="color:white"><input type="checkbox" style="width:auto"> Proof of residence</label>
-<label style="color:white"><input type="checkbox" style="width:auto"> Email + Phone</label>
-<label style="color:white"><input type="checkbox" style="width:auto"> Accepted at academy/TVET</label>
-</div>
-<p style="color:#444;font-size:11px;margin-top:15px">We help you get accepted first (free), then NSFAS. Don't pay R99 until you are registered on Mault Academy.</p>
-<div style="margin-top:20px;background:#111;border:1px solid #222;border-radius:12px;padding:15px">
-<p style="font-size:12px;color:#888">Need help? Email:</p><p style="font-weight:900;color:#a78bfa">maulthq014@gmail.com</p><p style="font-size:11px;color:#444;margin-top:5px">Subject: NSFAS R99 Help</p>
-</div>
-</div>
-</div>
-</div>
-
-<!-- HOW IT WORKS -->
-<div id="how" class="section">
-<div class="grid">
-<div class="card"><h3>🎓 For Students - Free</h3><p style="color:#666;font-size:13px;margin-top:10px;line-height:1.6">1. Register account (Tab 1) - 2 mins<br>2. We save details for fast admission<br>3. Get free notes instantly via email<br>4. We apply to 3 academies in your area<br>5. Academies contact you 24-48H<br>6. Optional NSFAS R99 help</p></div>
-<div class="card"><h3>🏫 For Academies - Pay Per Student</h3><p style="color:#666;font-size:13px;margin-top:10px;line-height:1.6">We send you ready students in Bellville/CBD/Khayelitsha. You pay R400 only when they register. No monthly fee. Email maulthq014@gmail.com to partner. We send 10-20 leads/month.</p><button class="btn2 btn" style="width:100%;margin-top:12px" onclick="window.location.href='mailto:maulthq014@gmail.com?subject=Academy Partnership'">PARTNER WITH US →</button></div>
-<div class="card"><h3>💰 How Mault Academy Makes Money</h3><p style="color:#666;font-size:13px;margin-top:10px;line-height:1.6">• R400 per student from academies (when student registers)<br>• R99 NSFAS help (once-off)<br>• R99/month premium notes after free month<br>• 50 students/month = R20k+ revenue</p></div>
-</div>
-<div style="max-width:700px;margin:30px auto;background:#111;border:1px solid #222;border-radius:16px;padding:20px">
-<h3 style="text-align:center">Excel System - Students Database</h3>
-<p style="color:#666;font-size:12px;text-align:center;margin-top:5px">Copy this to Google Sheets / Excel - Track all registrations</p>
-<div style="background:#080808;border-radius:10px;padding:12px;margin-top:15px;overflow:auto">
-<code style="font-size:10px;color:#888;white-space:pre">Full Name | ID | Age | Phone | Email | Area | Education | Course | Services | Date | Status | Academy Sent | NSFAS | Commission
-Mojalefa Mokoena | 990101... | 21-23 | 071... | moja@email.com | Bellville | Grade12 | Business N4 | Free App+Notes+NSFAS R99 | 29 Aug | New | Bellville College + TVET | R99 Paid | R0 Waiting
-</code>
-</div>
-</div>
-</div>
-
-<p style="text-align:center;color:#222;padding:50px">© 2026 Mault Academy • Division of Mault Group • maulthq014@gmail.com • Register first, get admitted fast</p>
+<p style="text-align:center;color:#222;padding:30px;font-size:11px">© 2026 Mault Academy • Email only • maulthq014@gmail.com</p>
 
 <script>
-function showTab(id){
-document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-document.getElementById(id).classList.add('active');
-event.target.classList.add('active');
-window.scrollTo({top:200,behavior:'smooth'});
+function sendEmail(){
+if(!aName.value || !aEmail.value || !aCourse.value){alert('Fill Name, Email, Course *'); return;}
+let subject = `NEW REG - ${aName.value} - ${aAcademy.value}`;
+let body = `NEW REGISTRATION - MAULT ACADEMY
+
+Name: ${aName.value}
+Email: ${aEmail.value}
+Phone: ${aPhone.value || 'Not provided'}
+Academy: ${aAcademy.value}
+Course: ${aCourse.value}
+Grade: ${aGrade.value}
+
+---
+Sent from Mault Academy Website
+Reply to: ${aEmail.value}
+All enquiries: maulthq014@gmail.com`;
+
+document.getElementById('copyBox').innerText = `To: maulthq014@gmail.com\nSubject: ${subject}\n\n${body}`;
+document.getElementById('after').style.display='block';
+document.getElementById('after').scrollIntoView({behavior:'smooth'});
+
+setTimeout(()=>{
+window.location.href = `mailto:maulthq014@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}, 500);
 }
-document.getElementById('sNSFAS').addEventListener('change',function(){
-document.getElementById('nsfasBox').style.display=this.checked?'block':'none';
-});
-function registerStudent(){
-if(!rName.value || !rID.value || !rEmail.value || !rPhone.value){alert('Fill all * fields');return}
-let services=[];
-if(sApply.checked) services.push('Free Application');
-if(sNotes.checked) services.push('Free Notes 1M');
-if(sNSFAS.checked) services.push('NSFAS R99');
-let sub=`NEW REG - ${rName.value} - ${rCourse.value} - ${rArea.value}`;
-let body=`NEW STUDENT REGISTRATION%0A%0AName: ${rName.value}%0AID: ${rID.value}%0AAge: ${rAge.value}%0APhone: ${rPhone.value}%0AEmail: ${rEmail.value}%0AArea: ${rArea.value}%0AEdu: ${rEdu.value}%0ACourse: ${rCourse.value}%0APass: ${rPass.value}%0AServices: ${services.join(', ')}%0A%0AACTION:%0A1. Save to Excel%0A2. Email free notes link to ${rEmail.value}%0A3. Apply to 3 academies in ${rArea.value}%0A${sNSFAS.checked?'4. NSFAS R99 - Send payment details':''}`;
-window.location.href=`mailto:maulthq014@gmail.com?subject=${encodeURIComponent(sub)}&body=${body}`;
-}
-function getNotes(course){
-let sub=`Free Notes Request - ${course}`;
-let body=`Hi Mault Academy,%0A%0AI registered. Please send free notes for: ${course}%0A%0AMy email: %0AMy course: ${course}%0A%0ASend Drive link - Free 1 month`;
-window.location.href=`mailto:maulthq014@gmail.com?subject=${encodeURIComponent(sub)}&body=${body}`;
-}
-function nsfasRequest(){
-let sub=`NSFAS Help R99 Request`;
-let body=`Hi Mault Academy,%0A%0AI need NSFAS help R99%0A%0AMy name: ${rName.value || ''}%0AEmail: ${rEmail.value || ''}%0APhone: ${rPhone.value || ''}%0A%0ASend payment details for R99`;
-window.location.href=`mailto:maulthq014@gmail.com?subject=${encodeURIComponent(sub)}&body=${body}`;
+
+function copyText(){
+let text = document.getElementById('copyBox').innerText;
+navigator.clipboard.writeText(text).then(()=>{alert('Copied! Now paste to maulthq014@gmail.com');});
 }
 </script>
 </body>
