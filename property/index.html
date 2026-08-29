@@ -17,6 +17,7 @@ select,input{background:#0a0a0a;border:1px solid #222;padding:12px;border-radius
 .card{background:#111;border:1px solid #1e1e1e;border-radius:24px;overflow:hidden}
 .card-img{height:220px;background:#222;position:relative;display:flex;align-items:center;justify-content:center;font-size:50px}
 .badge{position:absolute;top:15px;left:15px;background:white;color:black;padding:6px 12px;border-radius:100px;font-size:12px;font-weight:800}
+.badge-demo{position:absolute;top:15px;right:15px;background:#ffcc00;color:black;padding:6px 12px;border-radius:100px;font-size:11px;font-weight:900}
 .price{position:absolute;bottom:15px;left:15px;background:black;padding:8px 14px;border-radius:100px;font-weight:800}
 .card-body{padding:20px}
 .btn{display:block;text-align:center;background:white;color:black;padding:14px;border-radius:100px;margin-top:12px;font-weight:800;cursor:pointer}
@@ -29,68 +30,34 @@ select,input{background:#0a0a0a;border:1px solid #222;padding:12px;border-radius
 <nav><div style="font-weight:900">MAULT PROPERTY_</div><div><a href="/" style="color:#666">← MOTHER</a> <span style="color:#222">|</span> <a href="mailto:tech@maultgroup.com" style="color:#666">tech@maultgroup.com</a></div></nav>
 <div class="hero">
 <h1>Western Cape<br><span>Property Marketplace</span></h1>
-<p style="color:#666;margin-top:15px;max-width:600px">Rentals & Sales across WC. Landlords list FREE. Commission only when deal closes. Contact: tech@maultgroup.com</p>
+<p style="color:#666;margin-top:15px;max-width:600px">Rentals & Sales across WC. Landlords list FREE. Contact: tech@maultgroup.com</p>
+<div style="margin-top:20px;background:#ffcc00;color:black;display:inline-block;padding:8px 16px;border-radius:100px;font-weight:800;font-size:12px">⚠️ DESIGN DEMO - SAMPLE LISTINGS</div>
 <div class="filters">
-<div><select id="fType" onchange="filter()"><option value="all">All - Rent & Sale</option><option value="rent">For Rent</option><option value="sale">For Sale</option></select></div>
-<div><select id="fArea" onchange="filter()"><option value="all">All WC</option><option value="CBD">CBD</option><option value="Bellville">Bellville</option><option value="Stellenbosch">Stellenbosch</option><option value="Paarl">Paarl</option><option value="Khayelitsha">Khayelitsha</option></select></div>
+<div><select id="fType" onchange="filter()"><option value="all">All</option><option value="rent">Rent</option><option value="sale">Sale</option></select></div>
+<div><select id="fArea" onchange="filter()"><option value="all">All WC</option><option value="CBD">CBD</option><option value="Bellville">Bellville</option><option value="Stellenbosch">Stellenbosch</option></select></div>
 <div><input id="fPrice" type="number" placeholder="Min Price R" oninput="filter()"></div>
-<div><select id="fBed" onchange="filter()"><option value="0">Any Beds</option><option value="1">1+ Bed</option><option value="2">2+ Beds</option></select></div>
+<div><select id="fBed" onchange="filter()"><option value="0">Any Beds</option><option value="1">1+</option><option value="2">2+</option></select></div>
 </div>
 </div>
-<div class="grid" id="grid">
+<div class="grid">
 <div class="card" data-type="rent" data-area="CBD" data-price="8500" data-bed="2">
-<div class="card-img">🏢<div class="badge">FOR RENT</div><div class="price">R8,500 /mo</div></div>
-<div class="card-body"><h3>2 Bed - CBD</h3><div style="color:#666;font-size:13px;margin-top:8px">📍 Loop Street • 2 Bed • 65m²</div>
-<button class="btn" onclick="enquire('2 Bed CBD R8500')">WhatsApp Enquiry</button>
-<button class="btn btn2" onclick="emailEnquire('2 Bed CBD R8500')">Email: tech@maultgroup.com</button>
-</div></div>
+<div class="card-img">🏢<div class="badge">FOR RENT</div><div class="badge-demo">DEMO</div><div class="price">R8,500 /mo</div></div>
+<div class="card-body"><h3>SAMPLE - 2 Bed CBD</h3><div style="color:#666;font-size:13px;margin-top:8px">📍 Loop Street • DEMO LISTING</div><button class="btn" onclick="enquire('SAMPLE 2 Bed CBD')">WhatsApp Enquiry</button><button class="btn btn2" onclick="emailEnquire('SAMPLE 2 Bed CBD')">Email: tech@maultgroup.com</button></div></div>
 <div class="card" data-type="sale" data-area="Bellville" data-price="1250000" data-bed="3">
-<div class="card-img">🏠<div class="badge" style="background:#0f0">FOR SALE</div><div class="price">R1,250,000</div></div>
-<div class="card-body"><h3>3 Bed - Bellville</h3><div style="color:#666;font-size:13px;margin-top:8px">📍 Bellville South • 3 Bed • Yard</div>
-<button class="btn" onclick="enquire('3 Bed Bellville R1.25m')">WhatsApp Enquiry</button>
-<button class="btn btn2" onclick="emailEnquire('3 Bed Bellville R1.25m')">Email: tech@maultgroup.com</button>
-</div></div>
+<div class="card-img">🏠<div class="badge" style="background:#0f0">FOR SALE</div><div class="badge-demo">DEMO</div><div class="price">R1,250,000</div></div>
+<div class="card-body"><h3>SAMPLE - 3 Bed Bellville</h3><div style="color:#666;font-size:13px;margin-top:8px">📍 Bellville South • DEMO LISTING</div><button class="btn" onclick="enquire('SAMPLE Bellville')">WhatsApp Enquiry</button><button class="btn btn2" onclick="emailEnquire('SAMPLE Bellville')">Email: tech@maultgroup.com</button></div></div>
 <div class="card" data-type="rent" data-area="Stellenbosch" data-price="12000" data-bed="3">
-<div class="card-img">🌳<div class="badge">FOR RENT</div><div class="price">R12,000 /mo</div></div>
-<div class="card-body"><h3>3 Bed - Stellenbosch</h3><div style="color:#666;font-size:13px;margin-top:8px">📍 University Area • Students Welcome</div>
-<button class="btn" onclick="enquire('3 Bed Stellenbosch R12k')">WhatsApp Enquiry</button>
-<button class="btn btn2" onclick="emailEnquire('3 Bed Stellenbosch R12k')">Email: tech@maultgroup.com</button>
-</div></div>
+<div class="card-img">🌳<div class="badge">FOR RENT</div><div class="badge-demo">DEMO</div><div class="price">R12,000 /mo</div></div>
+<div class="card-body"><h3>SAMPLE - 3 Bed Stellenbosch</h3><div style="color:#666;font-size:13px;margin-top:8px">📍 Stellenbosch • DEMO LISTING</div><button class="btn" onclick="enquire('SAMPLE Stellenbosch')">WhatsApp Enquiry</button><button class="btn btn2" onclick="emailEnquire('SAMPLE Stellenbosch')">Email: tech@maultgroup.com</button></div></div>
 </div>
-<div class="owner-box">
-<div><h2>Landlord / Agent?</h2><p style="color:#666;margin-top:10px">List FREE. Pay only when closed. 50% first month (rent) or 2% (sale).</p><p style="margin-top:20px">📧 <a href="mailto:tech@maultgroup.com?subject=List My Property WC" style="color:white;text-decoration:underline">tech@maultgroup.com</a><br>📱 WhatsApp: 073 638 8901</p></div>
-<div><input id="lName" placeholder="Your Name"><br><br><input id="lPrice" placeholder="e.g. Rent R8000 or Sale R1.2m"><br><br><input id="lDetails" placeholder="Details: 2 bed, etc"><br><br>
-<button class="btn" style="width:100%" onclick="listProp()">List via WhatsApp</button>
-<button class="btn btn2" style="width:100%;margin-top:10px" onclick="listEmail()">List via Email</button>
-</div></div>
-<p style="text-align:center;color:#333;padding:40px">© 2026 Mault Property • tech@maultgroup.com • Division of Mault Group</p>
+<div class="owner-box"><div><h2>Landlord?</h2><p style="color:#666;margin-top:10px">List FREE. Your listing will look like samples above.</p><p style="margin-top:20px">📧 tech@maultgroup.com<br>📱 073 638 8901</p></div><div><input id="lName" placeholder="Your Name"><br><br><input id="lPrice" placeholder="Price"><br><br><input id="lDetails" placeholder="Details"><br><br><button class="btn" style="width:100%" onclick="listProp()">List via WhatsApp</button><button class="btn btn2" style="width:100%;margin-top:10px" onclick="listEmail()">List via Email</button></div></div>
+<p style="text-align:center;color:#333;padding:40px">© 2026 Mault Property • tech@maultgroup.com</p>
 <script>
-function filter(){
-let t=fType.value,a=fArea.value,p=fPrice.value||0,b=fBed.value;
-document.querySelectorAll('.card').forEach(c=>{
-let show=true;
-if(t!='all'&&c.dataset.type!=t)show=false;
-if(a!='all'&&c.dataset.area!=a)show=false;
-if(parseInt(c.dataset.price)<parseInt(p))show=false;
-if(parseInt(c.dataset.bed)<parseInt(b))show=false;
-c.style.display=show?'block':'none';
-});
-}
-function enquire(prop){
-window.open('https://wa.me/27736388901?text='+encodeURIComponent('Hi Mault Property! Interested in '+prop),'_blank');
-}
-function emailEnquire(prop){
-window.location.href='mailto:maulthq014@gmail.com?subject=Enquiry: '+encodeURIComponent(prop)+'&body=Hi Mault Team, I am interested in '+encodeURIComponent(prop)+'. Please contact me.';
-}
-function listProp(){
-let msg=`Hi Mault Property! List my property. Name: ${lName.value}, Price: ${lPrice.value}, Details: ${lDetails.value}`;
-window.open('https://wa.me/27736388901?text='+encodeURIComponent(msg),'_blank');
-}
-function listEmail(){
-let sub=`List My Property: ${lPrice.value}`;
-let body=`Name: ${lName.value}%0D%0APrice: ${lPrice.value}%0D%0ADetails: ${lDetails.value}`;
-window.location.href=`mailto:maulthq014@gmil.com?subject=${encodeURIComponent(sub)}&body=${body}`;
-}
+function filter(){let t=fType.value,a=fArea.value,p=fPrice.value||0,b=fBed.value;document.querySelectorAll('.card').forEach(c=>{let show=true;if(t!='all'&&c.dataset.type!=t)show=false;if(a!='all'&&c.dataset.area!=a)show=false;if(parseInt(c.dataset.price)<parseInt(p))show=false;if(parseInt(c.dataset.bed)<parseInt(b))show=false;c.style.display=show?'block':'none';});}
+function enquire(prop){window.open('https://wa.me/27736388901?text='+encodeURIComponent('Hi Mault Property! Interested in '+prop),'_blank');}
+function emailEnquire(prop){window.location.href='mailto:maulthq014@gmail.com?subject=Enquiry: '+prop+'&body=Hi, interested in '+prop;}
+function listProp(){let msg=`Hi! List my property. Name: ${lName.value}, Price: ${lPrice.value}, Details: ${lDetails.value}`;window.open('https://wa.me/27736388901?text='+encodeURIComponent(msg),'_blank');}
+function listEmail(){let sub=`List My Property: ${lPrice.value}`;let body=`Name: ${lName.value}%0D%0APrice: ${lPrice.value}%0D%0ADetails: ${lDetails.value}`;window.location.href=`mailto:maulthq014@gmail.com?subject=${encodeURIComponent(sub)}&body=${body}`;}
 </script>
 </body>
 </html>
