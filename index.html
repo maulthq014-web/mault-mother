@@ -2,35 +2,147 @@
 <html>
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MAULT GROUP OS</title>
+<title>Mault Group - Western Cape Digital Group</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-body{background:#0a0a0a;color:white;min-height:100vh;padding:20px}
-.header{text-align:center;padding:40px 0;border-bottom:1px solid #222}
-.header h1{font-size:48px;letter-spacing:4px}
-.header p{color:#888;margin-top:10px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:1200px;margin:40px auto}
-.card{background:#111;border:1px solid #222;padding:30px;border-radius:16px;transition:0.3s;cursor:pointer}
-.card:hover{border-color:#fff;transform:translateY(-5px)}
-.card h3{margin-bottom:10px}
-.card span{color:#0f0;font-size:12px}
-.live{color:#0f0}
-a{color:inherit;text-decoration:none}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial}
+body{background:#080808;color:white}
+a{text-decoration:none;color:inherit}
+nav{max-width:1350px;margin:0 auto;padding:22px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a1a;position:sticky;top:0;background:#080808;z-index:99}
+.hero{max-width:1350px;margin:60px auto;padding:0 20px;display:grid;grid-template-columns:1.3fr 0.7fr;gap:40px}
+.hero h1{font-size:72px;line-height:0.85;letter-spacing:-2px}
+.hero span{color:#666}
+.badge{background:white;color:black;padding:8px 16px;border-radius:100px;font-weight:900;font-size:11px;display:inline-block;letter-spacing:1px}
+.btn{background:white;color:black;padding:16px 32px;border-radius:100px;font-weight:900;cursor:pointer;border:none;display:inline-block}
+.btn2{background:transparent;border:1px solid #333;color:white}
+.grid{max-width:1350px;margin:40px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}
+.card{background:#111;border:1px solid #1e1e1e;border-radius:28px;padding:28px;position:relative;transition:0.2s}
+.card:hover{border-color:#333;transform:translateY(-2px)}
+.card h3{font-size:26px;margin-top:15px}
+.card p{color:#666;margin-top:10px;line-height:1.5;font-size:14px}
+.meta{display:flex;gap:8px;margin-top:15px;flex-wrap:wrap}
+.tag{background:#0a0a0a;border:1px solid #222;padding:6px 12px;border-radius:100px;font-size:11px;color:#888}
+.price{font-size:13px;color:#a78bfa;font-weight:800;margin-top:12px}
+.live{position:absolute;top:22px;right:22px;background:#00ff88;color:black;padding:5px 10px;border-radius:100px;font-size:10px;font-weight:900}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:44px}}
 </style>
 </head>
 <body>
-<div class="header">
-<h1>MAULT GROUP OS</h1>
-<p>MOTHER SYSTEM • Owner: Mojalefa Maloisane • Cape Town, SA</p>
-<p style="margin-top:20px"><span class="live">● LIVE</span> • maulthq014-web.vercel.app</p>
+<nav>
+<div style="font-weight:900;letter-spacing:1px">MAULT GROUP_</div>
+<div style="display:flex;gap:20px;align-items:center">
+<span style="color:#444;font-size:13px">Western Cape • 6 Divisions</span>
+<a href="mailto:maulthq014@gmail.com" style="background:#111;border:1px solid #222;padding:10px 18px;border-radius:100px;font-size:13px">maulthq014@gmail.com</a>
 </div>
-<div class="grid">
-<a href="/capital"><div class="card"><h3>💰 Mault Capital</h3><p>Investments & Treasury</p><span>● LIVE</span></div></a>
-<a href="/commerce"><div class="card"><h3>🛒 Mault Commerce</h3><p>Retail & E-commerce</p><span>● LIVE</span></div></a>
-<a href="/academy"><div class="card"><h3>🎓 Mault Academy</h3><p>Education & Training</p><span>● LIVE</span></div></a>
-<a href="/health"><div class="card"><h3>🏥 Mault Health</h3><p>Health & Wellness</p><span>● LIVE</span></div></a>
-<a href="/property"><div class="card"><h3>🏠 Mault Property</h3><p>Real Estate</p><span>● LIVE</span></div></a>
-<a href="/tech"><div class="card" style="border-color:#fff"><h3>💻 Mault Tech</h3><p>Technology • CLICK TO OPEN</p><span>● BUILDING NOW →</span></div></a>
+</nav>
+
+<div class="hero">
+<div>
+<div class="badge">EST 2026 • CAPE TOWN • PROFESSIONAL GROUP</div>
+<h1>Mault<br>Group<span><br>Built in WC,<br>For WC.</span></h1>
+<p style="color:#666;margin-top:20px;font-size:18px;line-height:1.5;max-width:500px">6 divisions, one mission: digitize Western Cape businesses. Property, Tech, Commerce, Academy, Health, Capital. All email-based, professional.</p>
+<div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn" href="#divisions">EXPLORE DIVISIONS →</a>
+<a class="btn btn2" href="mailto:maulthq014@gmail.com?subject=Mault Group Enquiry">CONTACT EMAIL</a>
 </div>
+<div style="margin-top:35px;display:flex;gap:25px;color:#444;font-size:13px">
+<span><b style="color:white">6</b> Divisions</span>
+<span><b style="color:white">50+</b> Clients Helped</span>
+<span><b style="color:white">100%</b> Email Only</span>
+</div>
+</div>
+<div style="background:#111;border:1px solid #222;border-radius:28px;padding:30px">
+<h3 style="font-size:20px">Group Structure 2026</h3>
+<div style="margin-top:20px">
+<div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #1a1a1a"><span style="color:#888">Property</span><span style="color:#00ff88;font-size:12px;font-weight:800">LIVE • 12 Listings</span></div>
+<div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #1a1a1a"><span style="color:#888">Tech</span><span style="color:#00ff88;font-size:12px;font-weight:800">LIVE • Websites</span></div>
+<div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #1a1a1a"><span style="color:#888">Commerce</span><span style="color:#00ff88;font-size:12px;font-weight:800">LIVE • Marketplace</span></div>
+<div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #1a1a1a"><span style="color:#888">Academy</span><span style="color:#a78bfa;font-size:12px;font-weight:800">NEW • Register First</span></div>
+<div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #1a1a1a"><span style="color:#888">Health</span><span style="color:#666;font-size:12px">COMING Q4</span></div>
+<div style="display:flex;justify-content:space-between;padding:12px 0"><span style="color:#888">Capital</span><span style="color:#666;font-size:12px">PARKED</span></div>
+</div>
+<div style="margin-top:25px;background:white;color:black;border-radius:16px;padding:18px;text-align:center">
+<p style="font-size:11px;font-weight:800;letter-spacing:1px">CONTACT</p>
+<p style="font-size:16px;font-weight:900;margin-top:5px">maulthq014@gmail.com</p>
+<p style="font-size:12px;color:#666;margin-top:3px">Email only • Reply in 24H • Professional</p>
+</div>
+</div>
+</div>
+
+<div id="divisions" class="grid">
+
+<!-- PROPERTY -->
+<div class="card">
+<div class="live">LIVE</div>
+<div style="font-size:36px">🏠</div>
+<h3>Mault Property</h3>
+<p>WC rentals & sales. Bellville, CBD, Khayelitsha. Free listing for landlords, email enquiries only.</p>
+<div class="meta"><span class="tag">To Rent</span><span class="tag">For Sale</span><span class="tag">WC Only</span></div>
+<p class="price">12 listings • R6,500 - R1.15m • Free listing</p>
+<a class="btn" style="width:100%;margin-top:18px;text-align:center" href="/property/">VISIT PROPERTY →</a>
+</div>
+
+<!-- TECH -->
+<div class="card" style="border-color:#333">
+<div class="live" style="background:white;color:black">LIVE</div>
+<div style="font-size:36px">💻</div>
+<h3>Mault Tech</h3>
+<p>Websites for WC businesses. R2,500 per site. GitHub hosting, professional design, 1 week delivery.</p>
+<div class="meta"><span class="tag">Websites</span><span class="tag">GitHub</span><span class="tag">R2,500</span></div>
+<p class="price">5+ sites built • 1 week delivery • Email support</p>
+<a class="btn" style="width:100%;margin-top:18px;text-align:center;background:white;color:black" href="/tech/">VISIT TECH →</a>
+</div>
+
+<!-- COMMERCE -->
+<div class="card">
+<div class="live">LIVE</div>
+<div style="font-size:36px">🛒</div>
+<h3>Mault Commerce</h3>
+<p>WC marketplace. Sell products, 15% commission, email orders only. No WhatsApp.</p>
+<div class="meta"><span class="tag">Marketplace</span><span class="tag">15% Fee</span><span class="tag">Email Orders</span></div>
+<p class="price">20+ products • 15% commission • Bellville delivery</p>
+<a class="btn btn2" style="width:100%;margin-top:18px;text-align:center" href="/commerce/">VISIT COMMERCE →</a>
+</div>
+
+<!-- ACADEMY - NEW MODEL -->
+<div class="card" style="border-color:#a78bfa">
+<div class="live" style="background:#a78bfa;color:black">NEW MODEL</div>
+<div style="font-size:36px">🎓</div>
+<h3>Mault Academy</h3>
+<p><span style="color:white">Register first, get admitted fast.</span> We help you apply to WC academies free + free notes 1 month. NSFAS help R99.</p>
+<div class="meta"><span class="tag">Register First</span><span class="tag">Free Notes 1M</span><span class="tag">NSFAS R99</span></div>
+<p class="price">150+ students helped • Free application • R99 NSFAS help</p>
+<a class="btn" style="width:100%;margin-top:18px;text-align:center;background:#a78bfa;color:black" href="/academy/">REGISTER NOW →</a>
+</div>
+
+<!-- HEALTH -->
+<div class="card">
+<div style="font-size:36px">🏥</div>
+<h3>Mault Health</h3>
+<p>WC health directory. Clinics, pharmacies, doctors in Bellville, CBD, Khayelitsha. Coming Q4 2026.</p>
+<div class="meta"><span class="tag">Clinics</span><span class="tag">Pharmacies</span><span class="tag">Coming Q4</span></div>
+<p class="price">Directory • Free listing for clinics • Email contact</p>
+<a class="btn btn2" style="width:100%;margin-top:18px;text-align:center" href="/health/">VIEW ROADMAP →</a>
+</div>
+
+<!-- CAPITAL -->
+<div class="card" style="background:#0a0a0a">
+<div style="font-size:36px">💰</div>
+<h3>Mault Capital</h3>
+<p>Funding for WC small businesses. Micro-loans R5k-R50k, business support. Parked until 2027.</p>
+<div class="meta"><span class="tag">Micro-loans</span><span class="tag">Parked</span><span class="tag">2027</span></div>
+<p class="price">R5k-R50k • WC businesses only • Email applications</p>
+<a class="btn btn2" style="width:100%;margin-top:18px;text-align:center" href="mailto:maulthq014@gmail.com?subject=Capital Enquiry">ENQUIRE EMAIL →</a>
+</div>
+
+</div>
+
+<div style="max-width:1350px;margin:60px auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px">
+<div style="background:#111;border:1px solid #222;border-radius:20px;padding:25px;text-align:center"><p style="font-size:28px;font-weight:900">R20k+</p><p style="color:#666;font-size:13px;margin-top:5px">Potential monthly from Academy + Property + Tech</p></div>
+<div style="background:#111;border:1px solid #222;border-radius:20px;padding:25px;text-align:center"><p style="font-size:28px;font-weight:900">Email Only</p><p style="color:#666;font-size:13px;margin-top:5px">maulthq014@gmail.com • No WhatsApp • Professional</p></div>
+<div style="background:white;color:black;border-radius:20px;padding:25px;text-align:center"><p style="font-size:28px;font-weight:900">WC Focus</p><p style="color:#666;font-size:13px;margin-top:5px">Bellville • CBD • Khayelitsha • Stellenbosch • Paarl</p></div>
+</div>
+
+<p style="text-align:center;color:#222;padding:60px;line-height:1.6">© 2026 Mault Group (Pty) Ltd • Cape Town, Western Cape • All divisions: maulthq014@gmail.com<br>Property • Tech • Commerce • Academy • Health • Capital • Professional Group • Email Only • No Demo</p>
+
 </body>
 </html>
