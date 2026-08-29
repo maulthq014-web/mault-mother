@@ -92,7 +92,7 @@ window.location.href='mailto:tech@maultgroup.com?subject=Enquiry: '+encodeURICom
 }
 function listProp(){
 let msg=`Hi Mault Property! List my property. Name: ${lName.value}, Price: ${lPrice.value}, Details: ${lDetails.value}`;
-window.open('https://wa.me/27736388901?text='+encodeURIComponent(msg),'_blank');
+window.open('https://wa.me/27+736388901?text='+encodeURIComponent(msg),'_blank');
 }
 function listEmail(){
 let sub=`List My Property: ${lPrice.value}`;
