@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mault Group OS - MOTHER</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAULT GROUP OS</title>
 <style>
-body{background:#000;color:#fff;font-family:Arial;padding:20px;margin:0}
-h1{color:#00ff88;font-size:42px;margin:0}
-.card{border:1px solid #333;padding:15px;border-radius:10px;margin:10px 0;background:#111}
-.live{color:#00ff88}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.status{background:#00ff88;color:#000;padding:20px;border-radius:10px;text-align:center;margin-top:30px;font-weight:bold}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#0a0a0a;color:white;min-height:100vh;padding:20px}
+.header{text-align:center;padding:40px 0;border-bottom:1px solid #222}
+.header h1{font-size:48px;letter-spacing:4px}
+.header p{color:#888;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:1200px;margin:40px auto}
+.card{background:#111;border:1px solid #222;padding:30px;border-radius:16px;transition:0.3s;cursor:pointer}
+.card:hover{border-color:#fff;transform:translateY(-5px)}
+.card h3{margin-bottom:10px}
+.card span{color:#0f0;font-size:12px}
+.live{color:#0f0}
+a{color:inherit;text-decoration:none}
 </style>
 </head>
 <body>
+<div class="header">
 <h1>MAULT GROUP OS</h1>
-<h2 style="color:#888">MOTHER SYSTEM - LIVE</h2>
-<p>Owner: Mojalefa Maloisane | maulthq014@gmail.com</p>
-<p>Cape Town, South Africa</p>
-
+<p>MOTHER SYSTEM • Owner: Mojalefa Maloisane • Cape Town, SA</p>
+<p style="margin-top:20px"><span class="live">● LIVE</span> • maulthq014-web.vercel.app</p>
+</div>
 <div class="grid">
-<div class="card"><h3>🏦 Mault Capital</h3><p class="live">● LIVE</p><p>Investments & Treasury</p></div>
-<div class="card"><h3>🛒 Mault Commerce</h3><p class="live">● LIVE</p><p>Retail & E-commerce</p></div>
-<div class="card"><h3>🎓 Mault Academy</h3><p class="live">● LIVE</p><p>Education & Training</p></div>
-<div class="card"><h3>🏥 Mault Health</h3><p class="live">● LIVE</p><p>Health & Wellness</p></div>
-<div class="card"><h3>🏠 Mault Property</h3><p class="live">● LIVE</p><p>Real Estate</p></div>
-<div class="card"><h3>🚀 Mault Tech</h3><p class="live">● LIVE</p><p>Technology</p></div>
-</div>
-
-<div class="status">
-<h2 style="margin:0">SYSTEM STATUS: 100% OPERATIONAL</h2>
-<p style="margin:5px 0">mault-mother.vercel.app</p>
-<p style="font-size:12px;margin-top:10px">Deployed: 29 Aug 2026</p>
-</div>
-
-<div style="margin-top:20px;text-align:center;color:#555">
-<p>© 2026 Mault Group | All Systems Active</p>
+<a href="/capital"><div class="card"><h3>💰 Mault Capital</h3><p>Investments & Treasury</p><span>● LIVE</span></div></a>
+<a href="/commerce"><div class="card"><h3>🛒 Mault Commerce</h3><p>Retail & E-commerce</p><span>● LIVE</span></div></a>
+<a href="/academy"><div class="card"><h3>🎓 Mault Academy</h3><p>Education & Training</p><span>● LIVE</span></div></a>
+<a href="/health"><div class="card"><h3>🏥 Mault Health</h3><p>Health & Wellness</p><span>● LIVE</span></div></a>
+<a href="/property"><div class="card"><h3>🏠 Mault Property</h3><p>Real Estate</p><span>● LIVE</span></div></a>
+<a href="/tech"><div class="card" style="border-color:#fff"><h3>💻 Mault Tech</h3><p>Technology • CLICK TO OPEN</p><span>● BUILDING NOW →</span></div></a>
 </div>
 </body>
 </html>
