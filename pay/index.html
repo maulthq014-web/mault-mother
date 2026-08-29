@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mault Pay - Airtime, Electricity, Betting Vouchers</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial}
+body{background:#0a0a0a;color:#e5e5e5}
+nav{max-width:1100px;margin:0 auto;padding:20px;display:flex;justify-content:space-between;border-bottom:1px solid #222}
+.btn{background:#e5e5e5;color:#0a0a0a;padding:14px 26px;border-radius:100px;font-weight:800;border:none;cursor:pointer}
+.btn2{background:#121212;border:1px solid #333;color:#aaa}
+.hero{max-width:1100px;margin:40px auto;padding:0 20px;text-align:center}
+.grid{max-width:1100px;margin:30px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:#121212;border:1px solid #222;border-radius:18px;padding:20px;cursor:pointer}
+.card:hover{border-color:#333}
+.form-box{max-width:580px;margin:40px auto;background:#121212;border:1px solid #222;border-radius:20px;padding:26px}
+input,select{background:#0a0a0a;border:1px solid #222;padding:13px;border-radius:10px;color:#e5e5e5;width:100%;margin-top:8px}
+label{color:#777;font-size:12px;margin-top:12px;display:block}
+</style>
+</head>
+<body>
+<nav><div style="font-weight:900">MAULT PAY_</div><div><a href="/" style="color:#666">← GROUP</a> | <a href="mailto:maulthq014@gmail.com" style="color:#666">maulthq014@gmail.com</a></div></nav>
+
+<div class="hero">
+<div style="background:#222;color:#aaa;border:1px solid #333;padding:6px 12px;border-radius:100px;font-size:11px;font-weight:700;display:inline-block">FLASH MODEL • WC ONLY • EMAIL DELIVERY</div>
+<h1 style="font-size:46px;margin-top:14px;line-height:0.9">Buy Vouchers<br><span style="color:#666">Instant Email</span></h1>
+<p style="color:#777;margin-top:12px">Airtime, electricity, betting, DSTV. We buy bulk at discount, sell to you. R3-R10 fee.</p>
+</div>
+
+<div class="grid">
+<div class="card" onclick="selectVoucher('Airtime')"><div style="font-size:26px">📱</div><h3 style="margin-top:8px;color:white">Airtime</h3><p style="color:#777;font-size:12px">Vodacom, MTN, Cell C, Telkom</p><p style="color:#aaa;font-size:11px;margin-top:8px">3-5% fee</p></div>
+<div class="card" onclick="selectVoucher('Electricity')"><div style="font-size:26px">⚡</div><h3 style="margin-top:8px;color:white">Electricity</h3><p style="color:#777;font-size:12px">City of Cape Town, Eskom</p><p style="color:#aaa;font-size:11px;margin-top:8px">R3 fee per token</p></div>
+<div class="card" onclick="selectVoucher('Betting')"><div style="font-size:26px">🎰</div><h3 style="margin-top:8px;color:white">Betting</h3><p style="color:#777;font-size:12px">Hollywood, Betway, Sportingbet</p><p style="color:#aaa;font-size:11px;margin-top:8px">5-7% • HOT</p></div>
+<div class="card" onclick="selectVoucher('DSTV')"><div style="font-size:26px">📺</div><h3 style="margin-top:8px;color:white">DSTV / Showmax</h3><p style="color:#777;font-size:12px">Pay instantly</p><p style="color:#aaa;font-size:11px;margin-top:8px">R5 fee</p></div>
+<div class="card" onclick="selectVoucher('Data')"><div style="font-size:26px">🌐</div><h3 style="margin-top:8px;color:white">Data Bundles</h3><p style="color:#777;font-size:12px">All networks</p><p style="color:#aaa;font-size:11px;margin-top:8px">5% fee</p></div>
+<div class="card" onclick="selectVoucher('Retail')"><div style="font-size:26px">🛒</div><h3 style="margin-top:8px;color:white">Retail Vouchers</h3><p style="color:#777;font-size:12px">Shoprite, Uber, Steam</p><p style="color:#aaa;font-size:11px;margin-top:8px">3-8% fee</p></div>
+</div>
+
+<div class="form-box">
+<h2 style="text-align:center;color:white">Order Voucher</h2>
+<p style="color:#666;text-align:center;font-size:12px;margin-top:5px">Pay via EFT/Capitec • Deliver via email • 10 mins</p>
+<label>Type *</label><select id="vType"><option>Airtime</option><option>Electricity</option><option>Betting - Hollywood</option><option>Betting - Betway</option><option>DSTV</option><option>Data Bundle</option><option>Retail Voucher</option></select>
+<label>Provider *</label><select id="vProvider"><option>Vodacom</option><option>MTN</option><option>Cell C</option><option>Telkom</option><option>Eskom / City of Cape Town</option><option>DSTV</option></select>
+<label>Amount *</label><select id="vAmount"><option>R20</option><option>R50</option><option>R100</option><option>R200</option><option>R500</option></select>
+<label>Phone / Meter Number *</label><input id="vNumber" placeholder="0712345678 or meter">
+<label>Email * (voucher sent here)</label><input id="vEmail" placeholder="your@email.com">
+<div style="background:#0a0a0a;border:1px solid #222;border-radius:10px;padding:12px;margin-top:14px;text-align:center">
+<p style="color:#777;font-size:11px">You pay:</p><p style="font-size:18px;font-weight:800;color:white" id="vTotal">R55 for R50 (R5 fee)</p><p style="color:#444;font-size:10px;margin-top:4px">Via Capitec / EFT • Instant after POP</p>
+</div>
+<button class="btn" style="width:100%;margin-top:14px" onclick="orderVoucher()">ORDER VIA EMAIL →</button>
+<p style="color:#333;text-align:center;font-size:10px;margin-top:8px">To maulthq014@gmail.com • Deliver in 10 mins after payment</p>
+</div>
+
+<p style="text-align:center;color:#222;padding:40px;font-size:12px">© 2026 Mault Pay • maulthq014@gmail.com • Flash model • WC only</p>
+
+<script>
+function selectVoucher(t){vType.value=t;document.querySelector('.form-box').scrollIntoView({behavior:'smooth'});}
+function orderVoucher(){
+if(!vNumber.value || !vEmail.value){alert('Fill number & email');return}
+let sub=`VOUCHER ORDER - ${vType.value} ${vAmount.value} - ${vNumber.value}`;
+let body=`NEW ORDER - MAULT PAY%0A%0AType: ${vType.value}%0AProvider: ${vProvider.value}%0AAmount: ${vAmount.value}%0ANumber: ${vNumber.value}%0AEmail: ${vEmail.value}`;
+window.location.href=`mailto:maulthq014@gmail.com?subject=${encodeURIComponent(sub)}&body=${body}`;
+}
+vAmount.addEventListener('change',function(){
+let a=parseInt(vAmount.value.replace('R',''));let fee=Math.max(3,Math.round(a*0.1));document.getElementById('vTotal').innerText=`R${a+fee} for ${vAmount.value} (R${fee} fee)`;
+});
+</script>
+</body>
+</html>
