@@ -2,86 +2,91 @@
 <html>
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mault Commerce - Sell Anything in WC</title>
+<title>Mault Commerce - WC Marketplace</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial}
 body{background:#080808;color:white}
 a{text-decoration:none;color:inherit}
 nav{max-width:1300px;margin:0 auto;padding:20px;display:flex;justify-content:space-between;border-bottom:1px solid #1a1a1a}
-.hero{max-width:1300px;margin:50px auto;padding:0 20px;text-align:center}
+.hero{max-width:1300px;margin:60px auto;padding:0 20px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px;align-items:center}
 .hero h1{font-size:64px;line-height:0.9}
 .hero span{color:#fb923c}
-.badge{background:#fb923c;color:black;display:inline-block;padding:8px 16px;border-radius:100px;font-weight:900;font-size:12px}
-.badge-demo{background:#ffcc00;color:black;padding:6px 12px;border-radius:100px;font-weight:900;font-size:11px;margin-left:8px}
+.btn{background:white;color:black;padding:16px 32px;border-radius:100px;display:inline-block;font-weight:900;cursor:pointer;border:none;text-align:center}
+.btn2{background:transparent;border:1px solid #333;color:white}
 .grid{max-width:1300px;margin:40px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:#111;border:1px solid #1e1e1e;border-radius:24px;overflow:hidden;position:relative}
-.demo-ribbon{position:absolute;top:12px;left:12px;background:#ffcc00;color:black;padding:6px 12px;border-radius:100px;font-weight:900;font-size:11px;z-index:2}
-.card-img{height:200px;background:linear-gradient(45deg,#111,#222);display:flex;align-items:center;justify-content:center;font-size:50px}
-.card-body{padding:20px}
-.price{color:#fb923c;font-weight:900;margin-top:8px;font-size:20px}
-.btn{background:white;color:black;padding:12px;border-radius:100px;display:block;text-align:center;font-weight:900;margin-top:12px;cursor:pointer;border:none;width:100%}
-.cart{max-width:1300px;margin:80px auto;padding:30px 20px;background:#111;border:1px solid #222;border-radius:24px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px}
-input,select{background:#0a0a0a;border:1px solid #222;padding:14px;border-radius:12px;color:white;width:100%;margin-top:10px}
+.card{background:#111;border:1px solid #1e1e1e;border-radius:24px;padding:30px}
+.card h3{font-size:20px}
+.card p{color:#666;margin-top:10px;line-height:1.6;font-size:14px}
+.form-box{max-width:1300px;margin:80px auto;padding:40px 20px;background:#111;border:1px solid #222;border-radius:24px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+input,select,textarea{background:#0a0a0a;border:1px solid #222;padding:14px;border-radius:12px;color:white;width:100%;margin-top:10px}
 label{color:#888;font-size:13px;margin-top:15px;display:block}
-@media(max-width:900px){.hero h1{font-size:40px}.cart{grid-template-columns:1fr}}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:42px}.form-box{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<nav><div style="font-weight:900">MAULT COMMERCE_</div><div><a href="/" style="color:#666">← MOTHER</a> | <a href="mailto:maulthq014@gmail.com" style="color:#666">maulthq014@gmail.com</a></div></nav>
+<nav><div style="font-weight:900;letter-spacing:1px">MAULT COMMERCE_</div><div><a href="/" style="color:#666">← MOTHER</a> <span style="color:#222"> | </span> <a href="mailto:maulthq014@gmail.com" style="color:#666">maulthq014@gmail.com</a></div></nav>
 
 <div class="hero">
-<div class="badge">WC SELLERS MARKETPLACE <span class="badge-demo">⚠️ DESIGN DEMO - V1</span></div>
-<h1>SELL<br><span>ANYTHING</span><br>IN WC</h1>
-<p style="color:#666;margin:20px auto;max-width:600px;font-size:18px">Demo store - All products are design demos. Real sellers launching soon.</p>
+<div>
+<h1>Your Store<br><span>In Western Cape</span></h1>
+<p style="color:#888;margin-top:20px;font-size:18px;line-height:1.5">Mault Commerce is a curated marketplace for WC brands. We build your store, handle orders via email, and help you sell. No monthly fees.</p>
+<div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap">
+<button class="btn" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">BECOME A SELLER →</button>
+<a class="btn btn2" href="mailto:maulthq014@gmail.com?subject=Commerce Enquiry">CONTACT US</a>
+</div>
+<div style="margin-top:30px;display:flex;gap:20px;color:#444;font-size:13px">
+<span>✓ 0% Monthly Fee</span><span>✓ 15% Per Sale</span><span>✓ WC Delivery</span>
+</div>
+</div>
+<div style="background:#111;border:1px solid #222;border-radius:24px;padding:30px">
+<h3>Seller Benefits</h3>
+<div style="margin-top:20px">
+<p style="color:#666;font-size:14px;margin-top:12px">✓ <span style="color:white">Free store setup</span> - We design it</p>
+<p style="color:#666;font-size:14px;margin-top:12px">✓ <span style="color:white">Email orders</span> - No app needed</p>
+<p style="color:#666;font-size:14px;margin-top:12px">✓ <span style="color:white">You keep 85%</span> - We take 15% only on sale</p>
+<p style="color:#666;font-size:14px;margin-top:12px">✓ <span style="color:white">Cape Town market</span> - CBD to Khayelitsha</p>
+</div>
+<div style="margin-top:25px;background:#080808;padding:20px;border-radius:16px;text-align:center">
+<p style="color:#888;font-size:12px">EARLY SELLERS</p>
+<p style="font-size:28px;font-weight:900;margin-top:5px">First 10 Sellers: 10% Only</p>
+<p style="color:#666;font-size:13px;margin-top:5px">Limited launch offer</p>
+</div>
+</div>
 </div>
 
 <div class="grid">
-<div class="card"><div class="demo-ribbon">⚠️ DEMO PRODUCT</div><div class="card-img">👟</div><div class="card-body"><h3>Premium Sneakers - Bellville</h3><p style="color:#666;font-size:13px">Size 6-10 • Demo data</p><div class="price">R899</div><p style="color:#444;font-size:11px;margin-top:5px">Demo product - not real stock</p><button class="btn" onclick="addCart('Sneakers DEMO R899')">Add to Cart (Demo)</button></div></div>
-
-<div class="card" style="border-color:#fb923c"><div class="demo-ribbon">⚠️ DEMO PRODUCT</div><div class="card-img">💄</div><div class="card-body"><h3>Beauty Combo - Khayelitsha</h3><p style="color:#666;font-size:13px">Demo • 50 sold (demo)</p><div class="price">R350</div><p style="color:#444;font-size:11px;margin-top:5px">Demo product - not real stock</p><button class="btn" onclick="addCart('Beauty Combo DEMO R350')">Add to Cart (Demo)</button></div></div>
-
-<div class="card"><div class="demo-ribbon">⚠️ DEMO PRODUCT</div><div class="card-img">📱</div><div class="card-body"><h3>Phone Accessories Pack</h3><p style="color:#666;font-size:13px">CBD • Demo listing</p><div class="price">R199</div><p style="color:#444;font-size:11px;margin-top:5px">Demo product - not real stock</p><button class="btn" onclick="addCart('Accessories DEMO R199')">Add to Cart (Demo)</button></div></div>
-
-<div class="card"><div class="demo-ribbon">⚠️ DEMO PRODUCT</div><div class="card-img">👕</div><div class="card-body"><h3>Mault Merch - Limited</h3><p style="color:#666;font-size:13px">Group official tee - Demo</p><div class="price">R299</div><p style="color:#444;font-size:11px;margin-top:5px">Demo product - design only</p><button class="btn" onclick="addCart('Mault Tee DEMO R299')">Add to Cart (Demo)</button></div></div>
+<div class="card"><h3>👟 Fashion & Apparel</h3><p>Sneakers, clothing, accessories. For brands in Bellville, CBD, and townships. We handle showcase.</p><p style="margin-top:15px;color:#fb923c;font-weight:800">15% Commission</p></div>
+<div class="card" style="border-color:white"><h3>💄 Beauty & Wellness</h3><p>Skincare, hair, wellness products. High demand in WC. Perfect for small beauty businesses.</p><p style="margin-top:15px;color:white;font-weight:800">Best Selling Category</p></div>
+<div class="card"><h3>📱 Electronics & More</h3><p>Phone accessories, gadgets, home goods. Fast-moving products with same-day delivery option.</p><p style="margin-top:15px;color:#fb923c;font-weight:800">Same-Day Delivery</p></div>
 </div>
 
-<div class="cart">
+<div class="form-box" id="apply">
 <div>
-<h2>🛒 Cart (<span id="cCount">0</span>) - DEMO MODE</h2>
-<div id="cItems" style="margin-top:20px;background:#080808;border:1px solid #222;padding:20px;border-radius:16px;color:#666">No demo items yet.</div>
-<h2 style="margin-top:40px">Checkout (Demo)</h2>
-<label>Your Name</label><input id="oName" placeholder="Demo User">
-<label>Delivery Area</label><select id="oArea"><option>CBD - R50 (demo)</option><option>Bellville - R50 (demo)</option><option>Khayelitsha - R80 (demo)</option></select>
-<label>Email</label><input id="oPhone" placeholder="demo@email.com">
+<h2 style="font-size:36px">Apply to Sell</h2>
+<p style="color:#666;margin-top:10px">2 minute application. We review in 24H and build your store.</p>
+<label>Your Name</label><input id="sName" placeholder="Mojalefa">
+<label>Business Name</label><input id="sBiz" placeholder="e.g. Bellville Sneakers">
+<label>What do you sell?</label><select id="sCat"><option>Fashion & Apparel</option><option>Beauty & Wellness</option><option>Electronics</option><option>Home & Living</option><option>Food & Drinks</option><option>Other</option></select>
+<label>Business Area</label><select id="sArea"><option>CBD</option><option>Bellville</option><option>Khayelitsha</option><option>Stellenbosch</option><option>Paarl</option><option>Other WC</option></select>
 </div>
-<div>
-<div style="background:white;color:black;padding:30px;border-radius:20px;text-align:center">
-<p style="color:#888;font-size:13px">DEMO TOTAL</p>
-<h2 style="font-size:42px;margin-top:10px" id="cTotal">R0</h2>
-<p style="color:#666;margin-top:10px" id="cBreak">Demo cart</p>
-<button class="btn" style="background:black;color:white;margin-top:20px;padding:18px" onclick="checkoutEmail()">SEND DEMO ORDER VIA EMAIL →</button>
-<p style="color:#888;font-size:11px;margin-top:15px">⚠️ This is a design demo. No real products will be shipped. Orders go to maulthq014@gmail.com for testing.</p>
+<div style="display:flex;flex-direction:column;justify-content:center">
+<label>Short Description</label><textarea id="sDesc" rows="4" placeholder="Tell us about your products..."></textarea>
+<label>Your Email</label><input id="sEmail" placeholder="your@email.com">
+<button class="btn" style="margin-top:20px;padding:20px;font-size:16px" onclick="applyCommerce()">APPLY VIA EMAIL →</button>
+<p style="color:#444;text-align:center;margin-top:15px;font-size:13px">Application goes to maulthq014@gmail.com<br>No WhatsApp • Professional only</p>
+<div style="margin-top:20px;background:#080808;border:1px solid #222;padding:20px;border-radius:16px">
+<p style="font-size:13px;color:#888">HOW IT WORKS</p>
+<p style="margin-top:10px;font-size:14px;color:#666">1. Apply via email<br>2. We review in 24H<br>3. We build your product page<br>4. Orders come to your email<br>5. You deliver, you keep 85%</p>
 </div>
 </div>
 </div>
 
-<p style="text-align:center;color:#222;padding:60px">© 2026 Mault Commerce • maulthq014@gmail.com • All products are DEMO - Design Only V1</p>
+<p style="text-align:center;color:#222;padding:60px">© 2026 Mault Commerce • Division of Mault Group • maulthq014@gmail.com • Cape Town, WC • Launching Q4 2026</p>
 
 <script>
-let cart=[];
-function addCart(item){cart.push(item);updateCart()}
-function updateCart(){
-document.getElementById('cCount').innerText=cart.length;
-if(cart.length==0){document.getElementById('cItems').innerText='No demo items yet.';document.getElementById('cTotal').innerText='R0';return}
-document.getElementById('cItems').innerHTML=cart.map((i,idx)=>`${idx+1}. ${i} <span style="color:#ffcc00">[DEMO]</span>`).join('<br>');
-let total=cart.reduce((s,i)=>{let m=i.match(/R(\d+)/);return s+(m?parseInt(m[1]):0)},0);
-document.getElementById('cTotal').innerText='R'+total;
-document.getElementById('cBreak').innerText=cart.length+' demo items • No real payment';
-}
-function checkoutEmail(){
-if(cart.length==0){alert('Add demo items first!');return}
-let sub=`[DEMO] Commerce Order - ${oName.value} - ${document.getElementById('cTotal').innerText}`;
-let body=`DEMO ORDER - NOT REAL%0AName: ${oName.value}%0AArea: ${oArea.value}%0AEmail: ${oPhone.value}%0AItems: ${cart.join(', ')}%0ATotal: ${document.getElementById('cTotal').innerText}%0A%0AThis is a demo test from Mault Commerce.`;
+function applyCommerce(){
+let sub=`Seller Application - ${document.getElementById('sBiz').value} - ${document.getElementById('sCat').value}`;
+let body=`NEW SELLER APPLICATION%0A%0AName: ${sName.value}%0ABusiness: ${sBiz.value}%0ACategory: ${sCat.value}%0AArea: ${sArea.value}%0AEmail: ${sEmail.value}%0A%0ADescription:%0A${sDesc.value}%0A%0AApplied via Mault Commerce`;
 window.location.href=`mailto:maulthq014@gmail.com?subject=${encodeURIComponent(sub)}&body=${body}`;
 }
 </script>
